@@ -1,0 +1,14 @@
+<p> {{ title }}</p>
+
+<input type="text" [value]="clientName" />
+<p [style.color]="myColor">Text color was styled using style binding</p>
+
+<P [class]="appliedCSS">This line appliead the *myClass* property.</P>
+<p [class.blue]="notAppliedCSS">While this does not.</p>
+
+<button (click)="showData($event)">Click Here</button>
+<button on-click="showData($event)">Click Here</button>
+
+<h2>Example 1</h2>
+<button (click)="clickMe()">Click Me</button>"
+<p>You have click {{clickCount}}</p>
